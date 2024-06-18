@@ -69,6 +69,10 @@ class PostController extends Controller
         return view('contact',compact('people'));
     }
 
+    public function test(){
+        return "testing";
+    }
+
     public function post($id,$name,$password){
         return view('post', compact('id','name','password'));
     }
